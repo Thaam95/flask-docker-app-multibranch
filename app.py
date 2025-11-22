@@ -12,13 +12,12 @@ def goodbye():
 
 @app.route('/api/users', methods=['GET'])
 def users():
-    users = [
-        {"id": 1, "name": "Thaam T."},
-        {"id": 2, "name": "Shermin M."},
-        {"id": 3, "name": "Alex P."},
-        {"id": 4, "name": "Linda S."}
+    users_list = [
+        {"id": 1, "name": "John Doe", "email": "john@example.com"},
+        {"id": 2, "name": "Jane Smith", "email": "jane@example.com"},
+        {"id": 3, "name": "Bob Johnson", "email": "bob@example.com"}
     ]
-    return jsonify(users)
+    return jsonify(users_list)
 
 
 
